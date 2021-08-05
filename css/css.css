@@ -1,0 +1,406 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    outline: none; 
+    border: none; 
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 14px; background: #000;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.header{
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    margin: 0 auto;
+}
+.header .nav{
+    width: 100%; 
+    height: 50px; 
+    background: #fff; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+.header .nav ul{
+    max-width: 1200px; 
+    height: 50px; 
+    margin: 0 auto; 
+    text-align: right;}
+
+.header .nav ul li{
+    display: inline-block; 
+    padding-left: 10px;}
+
+.header .nav ul li a{ 
+    font-size: 20px; color: #000; 
+    display:block; 
+    line-height: 50px;
+    font-family: "Oswald";
+    background-color: white;
+}
+.header .nav ul li a:hover{ 
+    color: #0653b6;
+}
+.header .search-form{
+    margin-left: auto;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+}
+input[type=text]{
+    padding: 5px;
+    border: none;
+    font-size:16px;
+    font-family: "Oswald";
+}
+input[type=submit]{
+    float:right;
+    background: orange;
+    color:black;
+    border-radius:0 5px 5px 0;
+    cursor:pointer;
+    position: relative;
+    padding:5px;
+    border:none;
+    font-size: 16px;
+    font-family: "Oswald";
+}
+.header .logo{
+    max-width: 1200px; 
+    height: auto; 
+    margin: 0 auto; 
+    padding: 30px 20px;}
+
+.banner{
+    width: 100%; 
+    height: auto; 
+    max-height: 800px; 
+    overflow: hidden; 
+    position: relative;
+}
+.banner #pic img{
+    display: block; 
+    width: 100%;
+}
+.banner #an{
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    position: absolute; 
+    bottom:10%; 
+    text-align: center; 
+    font-size: 0;
+}
+
+.banner #an li{
+    display: inline-block; 
+    width: 15px; 
+    height: 15px; 
+    border-radius: 100%; 
+    margin: 0 8px; 
+    cursor: pointer;
+}
+
+.footer{
+    width: 100%; 
+    height: 80px; 
+    line-height: 80px; 
+    text-align: center; 
+    color: #fff;
+}
+
+.player {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg);
+    position: right;
+}
+
+.control,#current {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playbtn {
+    font-size: 24px;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #C6B7B7;
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    -webkit-text-fill-color:#C6B7B7;
+}
+
+#showAbout{
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background: rgba(0,0,0,0.8); 
+    display: none;
+}
+
+#showAbout .show{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 100%;
+}
+
+#showAbout .center{
+    max-width: 1200px; 
+    height: auto; 
+    margin: 0 20px; 
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 10px; 
+    position: relative;
+}
+
+#showAbout .center p{ 
+    font-size: 25px; 
+    line-height: 1.8;
+    font-family: "Oswald";
+}
+
+#showAbout .center .btn{ 
+    position: absolute; 
+    right: -10px; 
+    top: -10px;
+}
+
+#showAbout .center .btn a{
+    width:30px; 
+    height: 30px; 
+    display: block; 
+    text-align: center; 
+    font-size: 16px; 
+    color: #fff; 
+    line-height: 30px; 
+    background: red; 
+    border-radius: 100%;
+}
+
+#showContact{
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background: rgba(0,0,0,0.8); 
+    display: none;
+}
+
+#showContact .show{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 100%;
+}
+
+#showContact .center{
+    max-width: 1200px; 
+    height: auto; 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    position: relative;
+    font-family: "Oswald";
+}
+
+#showContact .center .item{
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+
+#showContact .center .item p{
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+#showContact .center .item input{
+    width: 300px; 
+    height: 40px; 
+    line-height: 40px; 
+    text-indent: 10px; 
+    border: 1px solid #ccc; 
+    overflow: hidden; 
+    border-radius: 5px;
+    font-family: "Oswald";
+}
+
+#showContact .center .item textarea{
+    width: 300px; 
+    height: 80px; 
+    line-height: 40px; 
+    text-indent: 10px; 
+    border: 1px solid #ccc; 
+    overflow: hidden; 
+    border-radius: 5px;
+    font-family: "Oswald";
+}
+
+#showContact .center .item button{
+    width: 100%; 
+    height: 45px; 
+    line-height: 45px; 
+    text-align: center; 
+    background:red; 
+    color: #fff; 
+    border-radius: 5px;
+    font-family: "Oswald";
+    font-size: 25px;
+}
+
+#showContact .center .btn{ 
+    position: absolute; 
+    right: -10px; 
+    top: -10px;
+}
+
+#showContact .center .btn a{
+    width:30px; 
+    height: 30px; 
+    display: block; 
+    text-align: center; 
+    font-size: 16px; 
+    color: #fff; 
+    line-height: 30px; 
+    background: red; 
+    border-radius: 100%;
+}
+
+#showPrice{
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background: rgba(0,0,0,0.8); 
+    display: none;
+}
+
+#showPrice .show{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 100%;
+}
+
+#showPrice .center{
+    max-width: 1200px; 
+    height: auto; 
+    margin: 0 20px; 
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 10px; 
+    position: relative;
+}
+
+#showPrice .center p{ 
+    font-size: 25px; 
+    line-height: 1.8;
+    font-family: "Oswald";
+}
+
+#showPrice.center .btn{ 
+    position: relative; 
+    right: -10px; 
+    top: -10px;
+}
+
+#showPrice .center .btn a{
+    width:30px; 
+    height: 30px; 
+    display: block; 
+    text-align: center; 
+    font-size: 16px; 
+    color: #fff; 
+    line-height: 30px; 
+    background: red; 
+    border-radius: 100%;
+    position: relative;
+    left: 435px;
+    bottom:45px;
+}
+
+#showFuel{
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background: rgba(0,0,0,0.8); 
+    display: none;
+}
+
+#showFuel .show{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 100%;
+}
+
+#showFuel .center{
+    max-width: 1200px; 
+    height: auto; 
+    margin: 0 20px; 
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 10px; 
+    position: relative;
+}
+
+#showFuel .center p{ 
+    font-size: 25px; 
+    line-height: 1.8;
+    font-family: "Oswald";
+}
+
+#showFuel.center .btn{ 
+    position: relative; 
+    right: -10px; 
+    top: -10px;
+}
+
+#showFuel .center .btn a{
+    width:30px; 
+    height: 30px; 
+    display: block; 
+    text-align: center; 
+    font-size: 16px; 
+    color: #fff; 
+    line-height: 30px; 
+    background: red; 
+    border-radius: 100%;
+    position: relative;
+    left: 380px;
+    bottom:45px;
+}

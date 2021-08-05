@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	<link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+</head>
+
+<body>
+	<div class="header">	
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="javascript:;" id="aboutBtn">Fact</a></li>
+				<li><a href="javascript:;" id="priceBtn">Price</a></li>
+				<li><a href="javascript:;" id="fuelBtn">Fuel consumption</a></li>
+				<li><a href="javascript:;" id="contactBtn">Subscribe</a></li>
+				<li><a href="About.html">About Us</a></li>
+				<form class ="search-form" action="https://www.google.com" target="blank" method="get">
+					<input type ="text" name="search" placeholder ="Search..">
+					<input type ="submit" value="Search">
+				</form>
+			</ul>
+		
+		</div>
+		<audio id="player" src="bg/background1.mp3"tab=0"></audio>
+		<div class="grid-cosntainer">
+		<div class="logo"><img src="img/logo.jpg" alt="">
+        <div class="control">
+        <i class="fas fa-play" id="playbtn"></i>
+      </div>
+    </div>
+	<div class="banner">
+		<ul id="pic">
+			<li><img src="img/b_01.jpg" ></li>
+			<li><img src="img/b_02.jpg" ></li>
+			<li><img src="img/b_03.jpg" ></li>
+			<li><img src="img/b_04.jpg" ></li>
+			<li><img src="img/b_05.jpg" ></li>
+		</ul>
+		<ul id="an">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	
+	<div class="footer">Copy yuyiyang0126@hotmail.com</div>
+
+
+
+	<div id="showAbout">
+		<div class="show">
+			<div class="center">
+				<div class="btn"><a href="javascript:;" id="closeAbout">×</a></div>
+				<p>The BMW M4 coupe for 2021 is undoubtedly one of the company's most drastic redesigns in its long history. Not only does the two-door version of the likewise-all-new BMW M3 have significantly different bodywork. The S58 straight-six engine, producing 503 horsepower versus 473 in the base model.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="showPrice">
+		<div class="show">
+			<div class="center">
+				<div class="btn"><a href="javascript:;" id="closePrice">×</a></div>
+				<p>2021 BMW M3 and M4 pricing </p>
+				<p>M3 – $144,900 plus on road costs </p>
+				<p>M4 – $149,900 plus on road costs </p>
+				<p>M3 Competition – $154,900 plus on road costs </p>
+				<p>M4 Competition – $159,900 plus on road costs</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="showFuel">
+		<div class="show">
+			<div class="center">
+				<div class="btn"><a href="javascript:;" id="closeFuel">×</a></div>
+				<p>M4 Competition Coupe 8.8L/100KM</p>
+				<p>M4 Competition Convertible 9.1L/100KM</p>
+			</div>
+		</div>
+	</div>
+
+		
+		<div id="showContact">
+		    <div class="show">
+		     	<div class="center">
+				    <div class="btn"><a href="javascript:;" id="closeContact">×</a></div>
+			     	<form action="">
+					<div class="item"><p>Name</p><input type="text" name="username"></div>
+					<div class="item"><p>Email</p><input type="text" name="email"></div>
+					<div class="item"><button type="submit">submit</button></div>
+				</form>
+			    </div>
+		    </div>
+	    </div>
+			
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
